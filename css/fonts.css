@@ -1,0 +1,40 @@
+/*Silk Screen NORMAL*/
+@font-face {
+    font-family: 'silkscreennormal';
+    src: url('../fonts/slkscr-webfont.eot');
+    src: url('../fonts/slkscr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/slkscr-webfont.woff') format('woff'),
+         url('../fonts/slkscr-webfont.ttf') format('truetype'),
+         url('../fonts/slkscr-webfont.svg#silkscreennormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Silk Screen BOLD*/
+@font-face {
+    font-family: 'silkscreenbold';
+    src: url('../fonts/slkscrb-webfont.eot');
+    src: url('../fonts/slkscrb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/slkscrb-webfont.woff') format('woff'),
+         url('../fonts/slkscrb-webfont.ttf') format('truetype'),
+         url('../fonts/slkscrb-webfont.svg#silkscreenbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+font-family: 'silkscreenbold';
+color:  #2d4b91;
+
+text-shadow: #fff 1px 1px,#a0cada 0px 0px,#a0cada 1px 1px,#a0cada 2px 2px,#a0cada 3px 3px,#a0cada 4px 4px,#a0cada 5px 5px,#a0cada 6px 6px,#a0cada 7px 7px,#a0cada 8px 8px,#a0cada 9px 9px;
+/*,#DCA84D 10px 10px,#DCA84D 11px 11px,#DCA84D 12px 12px,#DCA84D 13px 13px,#DCA84D 14px 14px,#DCA84D 15px 15px,#DCA84D 16px 16px,#DCA84D 17px 17px,#DCA84D 18px 18px,#DCA84D 19px 19px;*/
+
+/* a0cada */
+}
+/*
+    body{
+    font-family: 'silkscreennormal';
+        }
+*/

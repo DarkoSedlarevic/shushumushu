@@ -1,0 +1,93 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+  WATCH styles
+  ========================================================================== */
+
+.watch {
+   position: fixed;
+   width: 240px;
+   height: 240px;
+   left: 50%;
+   top: 50%;
+   margin-left: -120px;
+   margin-top: -120px;
+   /*background: #00d0b7;*/
+   /*border:  12px solid black;*/
+}
+.corona {
+   position: absolute;
+   z-index: 1;
+}
+.dial {
+   position: absolute;
+   z-index: 2;
+}
+.hour-hand {
+   position: absolute;
+   z-index: 3;
+   transform:rotate(25deg);
+}
+.minute-hand {
+   position: absolute;
+   z-index: 4;
+}
+@keyframes seconds {
+   100% {
+     transform:rotate(360deg);
+   }
+}
+.second-hand {
+   position: absolute;
+   z-index: 5;
+   animation: seconds 60s linear infinite;
+}
+
+
+.img-responsive  {
+   width: 100%;
+   height: auto;
+
+}
+
+.triger, .animation-wrap {
+   min-height: 100vh;
+    /*background:pink;
+    border-bottom: 1px solid white;*/
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
