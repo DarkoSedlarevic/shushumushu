@@ -2,7 +2,7 @@
 // init controller
 var controller = new ScrollMagic.Controller();
 
-
+var audio = new Audio('click.mp3');
 
 var coronaJust = new ScrollMagic.Scene({
     triggerElement: ".triger-1",
@@ -13,6 +13,10 @@ var coronaJust = new ScrollMagic.Scene({
   TweenLite.to(".corona", 2, {rotation: "-37", transformOrigin:"50% 50%"})
 ) //trigger TweenMax
 
+//change update progress start end enter leave
+.on("start change progress end", function (e) {
+         audio.play();
+})
 // var middleFinger = TweenMax.to(".middle-finger", 2, {marginTop: "-86"}), //trigger TweenMax
 // .setTween(middleFinger)
 //.addIndicators() // add indicators (requires plugin)
@@ -44,7 +48,10 @@ var coronaOne = new ScrollMagic.Scene({
 .setTween(
   TweenLite.to(".corona", 4, {rotation: "-98", transformOrigin:"50% 50%"})
 ) //trigger TweenMax
-
+//change update progress start end enter leave
+.on("start change progress end", function (e) {
+         audio.play();
+})
 .addTo(controller);
 
 var hourOne = new ScrollMagic.Scene({
@@ -72,7 +79,10 @@ var coronaMore = new ScrollMagic.Scene({
 .setTween(
   TweenLite.to(".corona", 4, {rotation: "-164", })
 ) //trigger TweenMax
-
+//change update progress start end enter leave
+.on("start change progress end", function (e) {
+         audio.play();
+})
 .addTo(controller);
 
 var hourMore = new ScrollMagic.Scene({
@@ -104,6 +114,10 @@ var coronaWatch = new ScrollMagic.Scene({
   TweenLite.to(".corona", 4, {rotation: "-230", transformOrigin:"50% 50%"})
 ) //trigger TweenMax
 
+//change update progress start end enter leave
+.on("start change progress end", function (e) {
+         audio.play();
+})
 .addTo(controller);
 
 var hourWatch = new ScrollMagic.Scene({
@@ -134,7 +148,10 @@ var coronaPromise = new ScrollMagic.Scene({
 .setTween(
   TweenLite.to(".corona", 8, {rotation: "-310", transformOrigin:"50% 50%"})
 ) //trigger TweenMax
-
+//change update progress start end enter leave
+.on("start change progress end", function (e) {
+         audio.play();
+})
 .addTo(controller);
 
 var hourPromise = new ScrollMagic.Scene({
