@@ -1,3 +1,13 @@
+//GET DATE FOR DIAL
+// from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_getdate
+function showDate() {
+    var date = new Date();
+    var day = date.getDate();
+    document.getElementById("date").innerHTML = day;
+};
+showDate();
+
+
 //ScrollMagic
 // init controller
 var controller = new ScrollMagic.Controller();
