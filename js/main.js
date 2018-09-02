@@ -1,16 +1,24 @@
-//GET DATE FOR DIAL
-// from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_getdate
-function showDate() {
-    var date = new Date();
-    var day = date.getDate();
-    document.getElementById("date").innerHTML = day;
-};
-showDate();
-
-
 //ScrollMagic
 // init controller
 var controller = new ScrollMagic.Controller();
+
+
+//pin the watch
+
+							// build scene
+							var pinWatch = new ScrollMagic.Scene({
+                triggerElement: ".triger-1",
+                triggerHook: 1,
+                duration: "560%"
+              })
+											.setPin("#watch")
+
+											.addTo(controller);
+
+
+
+
+
 
 var audio = new Audio('click.mp3');
 
@@ -27,6 +35,7 @@ var coronaJust = new ScrollMagic.Scene({
 .on("start change progress end", function (e) {
          audio.play();
 })
+
 // var middleFinger = TweenMax.to(".middle-finger", 2, {marginTop: "-86"}), //trigger TweenMax
 // .setTween(middleFinger)
 //.addIndicators() // add indicators (requires plugin)
@@ -178,6 +187,20 @@ var minutePromise = new ScrollMagic.Scene({
     duration: "60%"
 })
 .setTween(
-  TweenLite.to(".minute-hand", 60, {rotation: "1740", transformOrigin:"50% 50%"})
+  TweenLite.to(".minute-hand", 60, {rotation: "1730", transformOrigin:"50% 50%"})
 ) //trigger TweenMax
 .addTo(controller);
+
+
+
+
+
+
+//GET DATE FOR DIAL
+// from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_getdate
+function showDate() {
+    var date = new Date();
+    var day = date.getDate();
+    document.getElementById("date").innerHTML = day;
+};
+showDate();
