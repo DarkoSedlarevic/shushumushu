@@ -88,6 +88,13 @@ html {
     border-bottom: 1px solid white;*/
 }
 
+/*scroll container for mobile*/
+#example-wrapper {
+	height: 100%;
+  overflow-y: scroll;
+  	overflow-x: hidden;
+
+  }
 
 /* ==========================================================================
    Media Queries
